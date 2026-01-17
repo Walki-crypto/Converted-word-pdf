@@ -38,9 +38,9 @@ def run_cli():
 
     try:
         pdf_path = convert_docx_to_pdf(args.input, args.output)
-        print(f"✅ PDF generado en: {pdf_path}")
+        print(f"SUCCESS: PDF generado en: {pdf_path}")
     except Exception as exc:
-        print(f"❌ Error: {exc}", file=sys.stderr)
+        print(f"ERROR: {exc}", file=sys.stderr)
         sys.exit(1)
 
 
